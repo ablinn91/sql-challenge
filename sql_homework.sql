@@ -11,19 +11,19 @@ CREATE TABLE Employees (
 );
 
 CREATE TABLE Departments (
-    dept_no int,
-    dept_name varchar
+    dept_no varchar(10),
+    dept_name varchar (30)
 );    
 
 CREATE TABLE dept_emp (
     emp_no int,
-    dept_no int,
+    dept_no varchar(10),
     from_date date,
     to_date date
 );
 
 Create Table dept_manager (
-    dept_no int,
+    dept_no varchar(10),
     emp_no int,
     from_date date,
     to_datte date
@@ -40,6 +40,13 @@ Create Table titles (
     from_date date,
     to_date date
 );
+
+create table saleries (
+    emp_no int,
+    salary int,
+    from_date date,
+    to_date date
+)
 
 --prbelm 1 
 select 
